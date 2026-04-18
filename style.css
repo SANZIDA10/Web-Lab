@@ -9,6 +9,8 @@ body {
     background: linear-gradient(135deg, rgb(5, 5, 54), rgb(15, 24, 92));
     color: white;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -62,17 +64,137 @@ body {
 
 .hero {
     text-align: center;
-    padding: 90px 20px;
+    padding: 90px 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-kicker {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.82rem;
+    color: #9fd3ff;
+    margin-bottom: 14px;
 }
 
 .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    line-height: 1.25;
+}
+
+.hero p {
+    font-size: 1.08rem;
+    opacity: 0.9;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.hero-actions {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.cta-btn,
+.ghost-btn {
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 11px 18px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.cta-btn {
+    background: #ffffff;
+    color: #0b1a5b;
+}
+
+.cta-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.ghost-btn {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: white;
+}
+
+.ghost-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.features {
+    width: min(1100px, 92%);
+    margin: 20px auto 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.feature-card,
+.about-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    padding: 22px;
+    backdrop-filter: blur(6px);
+}
+
+.feature-card h2,
+.about-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p,
+.about-card p,
+.about-card li {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.page-content {
+    width: min(1100px, 92%);
+    margin: 40px auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
     font-size: 2.2rem;
     margin-bottom: 12px;
 }
 
-.hero p {
-    font-size: 1.05rem;
+.page-header p {
+    max-width: 760px;
+    margin: 0 auto;
     opacity: 0.9;
+    line-height: 1.6;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.about-card ul {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.site-footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 22px 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 @media (max-width: 800px) {
@@ -89,5 +211,14 @@ body {
 
     .nav-btn {
         margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .features,
+    .about-grid {
+        grid-template-columns: 1fr;
     }
 }
