@@ -275,6 +275,19 @@ body {
     align-self: flex-start;
 }
 
+.form-feedback {
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.form-feedback.success {
+    color: #9df0b0;
+}
+
+.form-feedback.error {
+    color: #ffc8c8;
+}
+
 .about-card ul {
     margin-left: 20px;
     margin-top: 8px;
