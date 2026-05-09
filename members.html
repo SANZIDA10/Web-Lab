@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members Dashboard - KUET Career Club</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .members-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .dashboard-header h1 {
+            margin: 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .stat-card h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .stat-card .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .search-section {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .search-box button {
+            padding: 0.75rem 1.5rem;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .search-box button:hover {
+            background: #5568d3;
+        }
+
+        .filters {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .members-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .member-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .member-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .member-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .member-info h3 {
+            margin: 0 0 0.25rem 0;
+            color: #333;
+        }
+
+        .member-email {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .member-meta {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 0.5rem;
+        }
+
+        .member-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .detail-item {
+            font-size: 0.9rem;
+        }
+
+        .detail-label {
+            color: #999;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .detail-value {
+            color: #333;
+            margin-top: 0.25rem;
+        }
+
+        .message-section {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .message-section p {
+            margin: 0;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #999;
+        }
+
+        .empty-state svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            opacity: 0.3;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #667eea;
+        }
+
+        .error-message {
+            background: #fee;
+            color: #c33;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            border-left: 4px solid #c33;
+        }
+
+        .program-stats {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .program-stats h3 {
+            margin: 0 0 1rem 0;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .program-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .program-item .program-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .program-item .program-count {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">KUET Career Club</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="members.html">Members</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="members-container">
+            <div class="dashboard-header">
+                <h1>Members Dashboard</h1>
+                <p style="margin: 0; color: #999;">View and manage club members</p>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="stats-grid" id="stats-container">
+                <div class="loading">Loading statistics...</div>
+            </div>
+
+            <!-- Search Section -->
+            <div class="search-section">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search by name, email, or program..." 
+                    >
+                    <button onclick="searchMembers()">Search</button>
+                    <button onclick="clearSearch()" style="background: #999;">Clear</button>
+                </div>
+                <div id="error-message" class="error-message" style="display: none;"></div>
+            </div>
+
+            <!-- Program Statistics -->
+            <div class="program-stats" id="program-stats-container" style="display: none;">
+                <h3>Members by Program</h3>
+                <div class="program-grid" id="program-grid"></div>
+            </div>
+
+            <!-- Members List -->
+            <div id="members-container">
+                <div class="loading">Loading members...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 KUET Career Club. Empowering students for professional excellence.</p>
+    </footer>
+
+    <script>
+        // Load initial data
+        document.addEventListener('DOMContentLoaded', () => {
+            loadMembers();
+            loadStats();
+        });
+
+        async function loadMembers(searchTerm = null) {
+            try {
+                const container = document.getElementById('members-container');
+                container.innerHTML = '<div class="loading">Loading members...</div>';
+
+                const url = searchTerm 
+                    ? `/api/members/search?q=${encodeURIComponent(searchTerm)}`
+                    : '/api/members';
+
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (!response.ok) {
+                    showError('Failed to load members');
+                    return;
+                }
+
+                const members = data.members || data;
+                
+                if (members.length === 0) {
+                    container.innerHTML = `
+                        <div class="empty-state">
+                            <p><strong>No members found</strong></p>
+                            <p>Members who join will appear here.</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                const membersHtml = members.map(member => `
+                    <div class="member-card">
+                        <div class="member-header">
+                            <div class="member-info">
+                                <h3>${escapeHtml(member.data.name)}</h3>
+                                <a href="mailto:${escapeHtml(member.data.email)}" class="member-email">
+                                    ${escapeHtml(member.data.email)}
+                                </a>
+                                <div class="member-meta">
+                                    Joined: ${new Date(member.submittedAt).toLocaleDateString()}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="member-details">
+                            ${member.data.studyProgram ? `
+                                <div class="detail-item">
+                                    <div class="detail-label">Study Program</div>
+                                    <div class="detail-value">${escapeHtml(member.data.studyProgram)}</div>
+                                </div>
+                            ` : ''}
+                            
+                            ${member.data.interests ? `
+                                <div class="detail-item">
+                                    <div class="detail-label">Interests</div>
+                                    <div class="detail-value">${escapeHtml(member.data.interests)}</div>
+                                </div>
+                            ` : ''}
+                        </div>
+
+                        ${member.data.message ? `
+                            <div class="message-section">
+                                <p><strong>About:</strong> ${escapeHtml(member.data.message)}</p>
+                            </div>
+                        ` : ''}
+                    </div>
+                `).join('');
+
+                container.innerHTML = membersHtml;
+            } catch (error) {
+                console.error('Error loading members:', error);
+                showError('Error loading members. Please try again.');
+            }
+        }
+
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/members/stats');
+                const data = await response.json();
+
+                const statsContainer = document.getElementById('stats-container');
+                statsContainer.innerHTML = `
+                    <div class="stat-card">
+                        <h3>Total Members</h3>
+                        <div class="stat-value">${data.totalMembers}</div>
+                    </div>
+                    <div class="stat-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <h3>Joined This Month</h3>
+                        <div class="stat-value">${data.joinedThisMonth}</div>
+                    </div>
+                `;
+
+                // Load program distribution
+                if (data.programDistribution && Object.keys(data.programDistribution).length > 0) {
+                    const statsDiv = document.getElementById('program-stats-container');
+                    statsDiv.style.display = 'block';
+
+                    const programGrid = document.getElementById('program-grid');
+                    const programHtml = Object.entries(data.programDistribution)
+                        .sort((a, b) => b[1] - a[1])
+                        .map(([program, count]) => `
+                            <div class="program-item">
+                                <div class="program-name">${escapeHtml(program)}</div>
+                                <div class="program-count">${count}</div>
+                            </div>
+                        `)
+                        .join('');
+                    
+                    programGrid.innerHTML = programHtml;
+                }
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+
+        function searchMembers() {
+            const searchTerm = document.getElementById('searchInput').value.trim();
+            if (searchTerm.length < 2) {
+                showError('Please enter at least 2 characters to search');
+                return;
+            }
+            loadMembers(searchTerm);
+        }
+
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('error-message').style.display = 'none';
+            loadMembers();
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('error-message');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, m => map[m]);
+        }
+
+        // Allow search with Enter key
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('searchInput').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    searchMembers();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
