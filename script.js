@@ -1,8 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
+    initializeTheme();
     setActiveNavigation();
     updateFooterYear();
     setupApiForms();
 });
+
+function initializeTheme() {
+    const themeToggle = document.getElementById("themeToggle");
+    if (!themeToggle) return;
+
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    updateThemeToggleIcon(savedTheme);
+
+    themeToggle.addEventListener("click", toggleTheme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    updateThemeToggleIcon(newTheme);
+}
+
+function updateThemeToggleIcon(theme) {
+    const themeToggle = document.getElementById("themeToggle");
+    if (!themeToggle) return;
+    themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
+}
 
 function setActiveNavigation() {
     const currentPage = window.location.pathname.split("/").pop() || "home.html";

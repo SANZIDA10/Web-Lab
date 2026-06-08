@@ -342,6 +342,7 @@
     </style>
 </head>
 <body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
     <nav class="navbar">
         <div class="nav-brand">KUET Career Club</div>
         <ul class="nav-links">
@@ -350,9 +351,10 @@
             <li><a href="events.html">Events</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">🌙</button>
     </nav>
 
-    <main>
+    <main id="maincontent">
         <div class="join-container">
             <!-- Header Section -->
             <div class="join-header">
@@ -387,7 +389,7 @@
 
             <!-- Membership Form -->
             <div class="form-wrapper">
-                <div class="success-message" id="successMessage">
+                <div class="success-message" id="successMessage" role="status" aria-live="polite">
                     <h4>✓ Welcome to KUET Career Club!</h4>
                     <p>Your membership request has been submitted successfully. Check your email for next steps.</p>
                 </div>
@@ -413,8 +415,8 @@
                     <!-- Academic Information Section -->
                     <div class="form-section">
                         <h3>Academic Information</h3>
-                        <div class="form-field">
-                            <label for="studyProgram">Study Program <span class="required">*</span></label>
+                        <fieldset class="form-field" aria-labelledby="studyProgramLabel">
+                            <legend id="studyProgramLabel">Study Program <span class="required">*</span></legend>
                             <div class="program-list">
                                 <div class="program-option">
                                     <input type="radio" id="cse" name="studyProgram" value="CSE">
@@ -443,14 +445,14 @@
                             </div>
                             <span class="error-message">Please select your study program</span>
                             <span class="help-text">Select your department or program</span>
-                        </div>
+                        </fieldset>
                     </div>
 
                     <!-- Interests Section -->
                     <div class="form-section">
                         <h3>Your Interests</h3>
-                        <div class="form-field">
-                            <label>What are you interested in? <span class="required">*</span></label>
+                        <fieldset class="form-field" aria-labelledby="interestsLabel">
+                            <legend id="interestsLabel">What are you interested in? <span class="required">*</span></legend>
                             <div class="checkbox-group">
                                 <div class="checkbox-item">
                                     <input type="checkbox" id="interest-workshops" name="interests" value="Workshops">
@@ -474,7 +476,7 @@
                                 </div>
                             </div>
                             <span class="error-message">Please select at least one interest</span>
-                        </div>
+                        </fieldset>
                     </div>
 
                     <!-- Motivation Section -->
@@ -676,5 +678,6 @@
             }
         });
     </script>
+    <script src="script.js" defer></script>
 </body>
 </html>

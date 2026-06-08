@@ -7,17 +7,19 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<a class="skip-link" href="#maincontent">Skip to main content</a>
 	<nav class="navbar">
 		<div class="nav-brand">KUET Career Club</div>
 		<ul class="nav-links">
 			<li><a href="home.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
-			<li><a href="events.html" class="active">Events</a></li>
+			<li><a href="events.html" class="active" aria-current="page">Events</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
+		<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">🌙</button>
 	</nav>
 
-	<main class="page-content">
+	<main id="maincontent" class="page-content">
 		<section class="page-header">
 			<h1>Upcoming Events</h1>
 			<p>Discover workshops, networking meetups, and career-focused sessions designed to prepare KUET students for real-world success.</p>
