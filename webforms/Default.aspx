@@ -1,0 +1,28 @@
+<%@ Page Title="Home | KUET Career Club" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebLab.WebForms.HomePage" %>
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">KUET Career Club</asp:Content>
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <section class="hero">
+        <p class="hero-kicker">Welcome to KUET Career Club</p>
+        <h1>Let Passion Drive Your Profession</h1>
+        <p>Build skills, connect with mentors, and discover opportunities that shape your future career.</p>
+        <div class="hero-actions">
+            <a href="Join.aspx" class="cta-btn">Become a Member</a>
+            <a href="Events.aspx" class="ghost-btn">Explore Events</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <article class="feature-card">
+            <h2>Skill Development</h2>
+            <p>Join workshops on CV writing, interview skills, leadership, and career planning.</p>
+        </article>
+        <article class="feature-card">
+            <h2>Career Networking</h2>
+            <p>Meet alumni, industry professionals, and recruiters through regular networking sessions.</p>
+        </article>
+        <article class="feature-card">
+            <h2>Real Opportunities</h2>
+            <p>Access internships, competitions, and collaborative projects that boost your profile.</p>
+        </article>
+    </section>
+</asp:Content>

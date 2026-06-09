@@ -1,0 +1,51 @@
+<%@ Page Title="Contact | KUET Career Club" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="WebLab.WebForms.ContactPage" %>
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">Contact | KUET Career Club</asp:Content>
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>Have a question, idea, or collaboration proposal? Reach out and we will get back to you soon.</p>
+    </section>
+
+    <section class="contact-layout">
+        <article class="about-card contact-panel">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> kuetcareerclub@gmail.com</p>
+            <p><strong>Phone:</strong> +880 1XXX-XXXXXX</p>
+            <p>Share partnership ideas, event suggestions, or general questions through the form.</p>
+        </article>
+
+        <div class="form-wrapper contact-form-wrap">
+            <asp:ValidationSummary ID="ContactSummary" runat="server" CssClass="validation-summary" ValidationGroup="ContactGroup" />
+            <asp:Panel ID="ContactStatusPanel" runat="server" CssClass="form-feedback success" Visible="false">
+                <asp:Literal ID="ContactStatusText" runat="server" />
+            </asp:Panel>
+
+            <asp:Panel ID="ContactFormPanel" runat="server" CssClass="contact-form">
+                <div class="form-field">
+                    <label for="NameTextBox">Full Name</label>
+                    <asp:TextBox ID="NameTextBox" runat="server" CssClass="text-input" />
+                    <asp:RequiredFieldValidator ID="NameRequiredValidator" runat="server" ControlToValidate="NameTextBox" ErrorMessage="Please enter your full name." Display="Dynamic" CssClass="field-validation-error" ValidationGroup="ContactGroup" />
+                    <asp:CustomValidator ID="NameLengthValidator" runat="server" ControlToValidate="NameTextBox" ErrorMessage="Please enter at least 2 characters." Display="Dynamic" CssClass="field-validation-error" OnServerValidate="NameLengthValidator_ServerValidate" ValidationGroup="ContactGroup" />
+                </div>
+
+                <div class="form-field">
+                    <label for="EmailTextBox">Email Address</label>
+                    <asp:TextBox ID="EmailTextBox" runat="server" CssClass="text-input" TextMode="Email" />
+                    <asp:RequiredFieldValidator ID="EmailRequiredValidator" runat="server" ControlToValidate="EmailTextBox" ErrorMessage="Please enter your email address." Display="Dynamic" CssClass="field-validation-error" ValidationGroup="ContactGroup" />
+                    <asp:RegularExpressionValidator ID="EmailRegexValidator" runat="server" ControlToValidate="EmailTextBox" ErrorMessage="Please enter a valid email address." Display="Dynamic" CssClass="field-validation-error" ValidationExpression="^[^\s@]+@[^\s@]+\.[^\s@]+$" ValidationGroup="ContactGroup" />
+                </div>
+
+                <div class="form-field">
+                    <label for="MessageTextBox">Message</label>
+                    <asp:TextBox ID="MessageTextBox" runat="server" CssClass="text-area" TextMode="MultiLine" Rows="6" />
+                    <asp:RequiredFieldValidator ID="MessageRequiredValidator" runat="server" ControlToValidate="MessageTextBox" ErrorMessage="Please write a message." Display="Dynamic" CssClass="field-validation-error" ValidationGroup="ContactGroup" />
+                    <asp:CustomValidator ID="MessageLengthValidator" runat="server" ControlToValidate="MessageTextBox" ErrorMessage="Your message should be at least 10 characters long." Display="Dynamic" CssClass="field-validation-error" OnServerValidate="MessageLengthValidator_ServerValidate" ValidationGroup="ContactGroup" />
+                </div>
+
+                <div class="form-actions single-action">
+                    <asp:Button ID="SubmitButton" runat="server" CssClass="cta-btn" Text="Send Message" OnClick="SubmitButton_Click" ValidationGroup="ContactGroup" />
+                </div>
+            </asp:Panel>
+        </div>
+    </section>
+</asp:Content>
