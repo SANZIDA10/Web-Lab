@@ -143,6 +143,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|d:\\web lab\\webforms\\join.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\join.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|d:\\web lab\\webforms\\securityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\securityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|d:\\web lab\\webforms\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -152,11 +160,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\Login.aspx",
+              "RelativeDocumentMoniker": "webforms\\Login.aspx",
+              "ToolTip": "D:\\Web Lab\\webforms\\Login.aspx",
+              "RelativeToolTip": "webforms\\Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-13T13:49:16.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SecurityHelper.cs",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\SecurityHelper.cs",
+              "RelativeDocumentMoniker": "webforms\\SecurityHelper.cs",
+              "ToolTip": "D:\\Web Lab\\webforms\\SecurityHelper.cs",
+              "RelativeToolTip": "webforms\\SecurityHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T13:48:48.212Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -169,6 +203,19 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2026-06-13T12:11:29.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "About.aspx",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\About.aspx",
+              "RelativeDocumentMoniker": "webforms\\About.aspx",
+              "ToolTip": "D:\\Web Lab\\webforms\\About.aspx",
+              "RelativeToolTip": "webforms\\About.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-12T20:50:39.653Z",
               "EditorCaption": ""
             },
             {
@@ -218,19 +265,6 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2026-06-12T21:12:01.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "About.aspx",
-              "DocumentMoniker": "D:\\Web Lab\\webforms\\About.aspx",
-              "RelativeDocumentMoniker": "webforms\\About.aspx",
-              "ToolTip": "D:\\Web Lab\\webforms\\About.aspx",
-              "RelativeToolTip": "webforms\\About.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-12T20:50:39.653Z",
               "EditorCaption": ""
             },
             {
