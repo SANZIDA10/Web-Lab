@@ -1,0 +1,30 @@
+﻿<%@ Page Title="Members | KCC Portfolio" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Members.aspx.cs" Inherits="WebLab.WebForms.Members" %>
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">Members | KCC Portfolio</asp:Content>
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <section class="page-hero">
+        <p class="kicker">PEOPLE BEHIND THE WORK</p>
+        <h1>Meet the KCC Members</h1>
+        <p class="subtitle">The students who plan, organize, and deliver KCC's career development programs.</p>
+    </section>
+
+    <section class="members-grid">
+        <asp:Repeater ID="MembersRepeater" runat="server">
+            <ItemTemplate>
+                <article class="member-card">
+                    <div class="member-avatar"><%# Eval("Name").ToString()[0].ToString().ToUpper() %></div>
+                    <div class="member-info">
+                        <h3><%# Eval("Name") %></h3>
+                        <span class="member-role"><%# Eval("Role") %></span>
+                        <div class="member-meta"><%# Eval("Department") %> &bull; <%# Eval("Year") %></div>
+                        <p class="member-bio"><%# Eval("Bio") %></p> 
+                    </div>
+                </article>
+            </ItemTemplate>
+        </asp:Repeater>
+        <asp:Panel ID="EmptyStatePanel" runat="server" CssClass="empty-state" Visible="false">
+            <h3>No members to display yet.</h3>
+        </asp:Panel>
+    </section>
+
+</asp:Content>

@@ -1,0 +1,69 @@
+﻿<%@ Page Title="Home | KUET Career Club" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebLab.WebForms.HomePage" %>
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">KUET Career Club</asp:Content>
+<asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
+    <!-- Page-specific head left empty - global styles and icons loaded from Site.Master -->
+</asp:Content>
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-left">
+        <h1 class="hero-title">KUET<br/>CAREER<br/>CLUB</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-sub">Build skills, connect with mentors, and discover opportunities that shape your future career.</p>
+        <div class="hero-btns">
+          <a href="About.aspx" class="btn-ghost">DISCOVER MORE</a>
+          <a href="Events.aspx" class="btn-teal">VIEW EVENTS</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="logo-display">
+          <img src="kcc-logo.png" alt="KUET Career Club Logo" />
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item">SKILL DEVELOPMENT</span><span class="marquee-dot"></span>
+        <span class="marquee-item">CAREER NETWORKING</span><span class="marquee-dot"></span>
+        <span class="marquee-item">REAL OPPORTUNITIES</span><span class="marquee-dot"></span>
+        <span class="marquee-item">LEADERSHIP</span><span class="marquee-dot"></span>
+        <span class="marquee-item">INTERVIEW PREP</span><span class="marquee-dot"></span>
+        <span class="marquee-item">ALUMNI CONNECT</span><span class="marquee-dot"></span>
+      </div>
+    </div>
+
+    <section class="featured">
+      <div class="featured-header">
+        <h2>Featured Event</h2>
+        <a href="Events.aspx" class="see-all">ALL EVENTS &rarr;</a>
+      </div>
+      <div class="event-banner">
+        <div class="event-banner-inner">
+          <div>
+            <div class="event-tag">WORKSHOP</div>
+            <h3>Resume &amp; LinkedIn Bootcamp</h3>
+            <div class="event-date">May 03, 2026 &bull; 3:30 PM &bull; Central Seminar Hall</div>
+          </div>
+          <a href="Events.aspx" class="event-arrow">&#8594;</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stat-card"><div class="stat-num">200+</div><div class="stat-label">ACTIVE MEMBERS</div></div>
+      <div class="stat-card"><div class="stat-num">30+</div><div class="stat-label">EVENTS HELD</div></div>
+      <div class="stat-card"><div class="stat-num">50+</div><div class="stat-label">ALUMNI NETWORK</div></div>
+    </div>
+
+    <div class="footer-tagline">
+      <h2>Stay ahead of the <em>curve.</em></h2>
+      <div class="social-links">
+        <a href="https://www.facebook.com/kuetcareerclub/" target="_blank"><i class="ti ti-brand-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/kuetcareerclub/" target="_blank"><i class="ti ti-brand-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 KUET CAREER CLUB. ALL RIGHTS RESERVED.</div>
+
+</asp:Content>
+</asp:Content>

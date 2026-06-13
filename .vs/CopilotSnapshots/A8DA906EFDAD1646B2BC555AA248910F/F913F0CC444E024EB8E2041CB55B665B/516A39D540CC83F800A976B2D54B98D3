@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server">KUET Career Club</asp:ContentPlaceHolder></title>
+    <link rel="stylesheet" href="~/Site.css" runat="server"/>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <form id="form1" runat="server">
+        <nav class="navbar">
+            <div class="nav-brand">KUET Career Club</div>
+            <ul class="nav-links">
+                <li><asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Default.aspx" Text="Home" /></li>
+                <li><asp:HyperLink ID="AboutLink" runat="server" NavigateUrl="~/About.aspx" Text="About" /></li>
+                <li><asp:HyperLink ID="EventsLink" runat="server" NavigateUrl="~/Events.aspx" Text="Events" /></li>
+                <li><asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx" Text="Contact" /></li>
+                <li><asp:HyperLink ID="JoinLink" runat="server" NavigateUrl="~/Join.aspx" Text="Join" /></li>
+                <li><asp:HyperLink ID="MembersLink" runat="server" NavigateUrl="~/Members.aspx" Text="Members" /></li>
+            </ul>
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">🌙</button>
+        </nav>
+
+        <main id="maincontent" class="page-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2026 KUET Career Club. Empowering students for professional excellence.</p>
+        </footer>
+    </form>
+</body>
+</html>

@@ -9,7 +9,7 @@
 
 namespace WebLab.WebForms
 {
-    public partial class JoinPage
+    public partial class JoinPage : global::System.Web.UI.Page
     {
         protected global::System.Web.UI.WebControls.ValidationSummary JoinSummary;
         protected global::System.Web.UI.WebControls.Panel JoinStatusPanel;

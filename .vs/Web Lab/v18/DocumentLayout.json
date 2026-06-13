@@ -3,14 +3,38 @@
   "WorkspaceRootPath": "D:\\Web Lab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\.copilot\\plans\\plan-create-missing-join.aspx.designer.cs-to-match-partial-class-and-controls.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\.copilot\\plans\\plan-fix-asp.net-could-not-load-type-weblab.webforms.memberspage-for-members.aspx.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Web Lab\\webforms\\Join.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webforms\\Join.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\members.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\members.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\.copilot\\plans\\plan-create-missing-join.aspx.designer.cs-to-match-partial-class-and-controls.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\.copilot\\plans\\plan-fix-asp.net-could-not-load-type-weblab.webforms.memberspage-for-members.aspx.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|d:\\web lab\\webforms\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -21,24 +45,8 @@
       "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\site.mobile.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\site.mobile.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\members.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +75,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\about.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -148,7 +152,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -156,7 +160,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Join.aspx",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\Join.aspx",
+              "RelativeDocumentMoniker": "webforms\\Join.aspx",
+              "ToolTip": "D:\\Web Lab\\webforms\\Join.aspx",
+              "RelativeToolTip": "webforms\\Join.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-13T12:11:29.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "plan-create-missing-join.aspx.designer.cs-to-match-partial-class-and-controls.md [Preview]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-create-missing-join.aspx.designer.cs-to-match-partial-class-and-controls.md",
               "ToolTip": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-create-missing-join.aspx.designer.cs-to-match-partial-class-and-controls.md [Preview]",
@@ -166,30 +183,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Join.aspx.designer.cs",
-              "DocumentMoniker": "D:\\Web Lab\\webforms\\Join.aspx.designer.cs",
-              "RelativeDocumentMoniker": "webforms\\Join.aspx.designer.cs",
-              "ToolTip": "D:\\Web Lab\\webforms\\Join.aspx.designer.cs",
-              "RelativeToolTip": "webforms\\Join.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T11:38:41.376Z",
+              "DocumentIndex": 5,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\Default.aspx",
+              "RelativeDocumentMoniker": "webforms\\Default.aspx",
+              "ToolTip": "D:\\Web Lab\\webforms\\Default.aspx",
+              "RelativeToolTip": "webforms\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-12T21:11:51.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "plan-fix-asp.net-could-not-load-type-weblab.webforms.memberspage-for-members.aspx.md [Preview]",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-fix-asp.net-could-not-load-type-weblab.webforms.memberspage-for-members.aspx.md",
-              "ToolTip": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-fix-asp.net-could-not-load-type-weblab.webforms.memberspage-for-members.aspx.md [Preview]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-06-13T11:37:20.461Z",
-              "EditorCaption": " [Preview]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Site.Master",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Site.Master",
               "RelativeDocumentMoniker": "webforms\\Site.Master",
@@ -202,20 +209,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Site.css",
-              "DocumentMoniker": "D:\\Web Lab\\webforms\\Site.css",
-              "RelativeDocumentMoniker": "webforms\\Site.css",
-              "ToolTip": "D:\\Web Lab\\webforms\\Site.css",
-              "RelativeToolTip": "webforms\\Site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-06-13T07:17:45.86Z",
+              "DocumentIndex": 0,
+              "Title": "About.aspx",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\About.aspx",
+              "RelativeDocumentMoniker": "webforms\\About.aspx",
+              "ToolTip": "D:\\Web Lab\\webforms\\About.aspx*",
+              "RelativeToolTip": "webforms\\About.aspx*",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-12T20:50:39.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
+              "Title": "Events.aspx",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\Events.aspx",
+              "RelativeDocumentMoniker": "webforms\\Events.aspx",
+              "ToolTip": "D:\\Web Lab\\webforms\\Events.aspx",
+              "RelativeToolTip": "webforms\\Events.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-12T21:12:01.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Contact.aspx",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Contact.aspx",
               "RelativeDocumentMoniker": "webforms\\Contact.aspx",
@@ -223,19 +243,8 @@
               "RelativeToolTip": "webforms\\Contact.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-12T20:50:49.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Members.aspx.cs",
-              "DocumentMoniker": "D:\\Web Lab\\webforms\\Members.aspx.cs",
-              "RelativeDocumentMoniker": "webforms\\Members.aspx.cs",
-              "ToolTip": "D:\\Web Lab\\webforms\\Members.aspx.cs",
-              "RelativeToolTip": "webforms\\Members.aspx.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowC8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T06:55:35.774Z"
+              "WhenOpened": "2026-06-12T20:50:49.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -252,19 +261,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Default.aspx",
-              "DocumentMoniker": "D:\\Web Lab\\webforms\\Default.aspx",
-              "RelativeDocumentMoniker": "webforms\\Default.aspx",
-              "ToolTip": "D:\\Web Lab\\webforms\\Default.aspx",
-              "RelativeToolTip": "webforms\\Default.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-12T21:11:51.449Z"
+              "DocumentIndex": 8,
+              "Title": "plan-fix-asp.net-could-not-load-type-weblab.webforms.memberspage-for-members.aspx.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-fix-asp.net-could-not-load-type-weblab.webforms.memberspage-for-members.aspx.md",
+              "ToolTip": "C:\\Users\\Lenovo\\.copilot\\plans\\plan-fix-asp.net-could-not-load-type-weblab.webforms.memberspage-for-members.aspx.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-13T11:37:20.461Z",
+              "EditorCaption": " [Preview]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 35,
+              "Title": "Join.aspx.designer.cs",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\Join.aspx.designer.cs",
+              "RelativeDocumentMoniker": "webforms\\Join.aspx.designer.cs",
+              "ToolTip": "D:\\Web Lab\\webforms\\Join.aspx.designer.cs",
+              "RelativeToolTip": "webforms\\Join.aspx.designer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAMBUwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T11:38:41.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Site.css",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\Site.css",
+              "RelativeDocumentMoniker": "webforms\\Site.css",
+              "ToolTip": "D:\\Web Lab\\webforms\\Site.css",
+              "RelativeToolTip": "webforms\\Site.css",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAUwAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-13T07:17:45.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Members.aspx.cs",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\Members.aspx.cs",
+              "RelativeDocumentMoniker": "webforms\\Members.aspx.cs",
+              "ToolTip": "D:\\Web Lab\\webforms\\Members.aspx.cs",
+              "RelativeToolTip": "webforms\\Members.aspx.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T06:55:35.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Styles.css",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Styles.css",
               "RelativeDocumentMoniker": "webforms\\Styles.css",
@@ -276,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Site.Mobile.Master",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Site.Mobile.Master",
               "RelativeDocumentMoniker": "webforms\\Site.Mobile.Master",
@@ -288,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Default.aspx.designer.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Default.aspx.designer.cs",
               "RelativeDocumentMoniker": "webforms\\Default.aspx.designer.cs",
@@ -300,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Members.aspx.designer.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Members.aspx.designer.cs",
               "RelativeDocumentMoniker": "webforms\\Members.aspx.designer.cs",
@@ -312,19 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Events.aspx",
-              "DocumentMoniker": "D:\\Web Lab\\webforms\\Events.aspx",
-              "RelativeDocumentMoniker": "webforms\\Events.aspx",
-              "ToolTip": "D:\\Web Lab\\webforms\\Events.aspx",
-              "RelativeToolTip": "webforms\\Events.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-12T21:12:01.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Events.aspx.designer.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Events.aspx.designer.cs",
               "RelativeDocumentMoniker": "webforms\\Events.aspx.designer.cs",
@@ -336,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Contact.aspx.designer.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Contact.aspx.designer.cs",
               "RelativeDocumentMoniker": "webforms\\Contact.aspx.designer.cs",
@@ -348,19 +381,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "About.aspx.designer.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\About.aspx.designer.cs",
               "RelativeDocumentMoniker": "webforms\\About.aspx.designer.cs",
-              "ToolTip": "D:\\Web Lab\\webforms\\About.aspx.designer.cs",
-              "RelativeToolTip": "webforms\\About.aspx.designer.cs",
+              "ToolTip": "D:\\Web Lab\\webforms\\About.aspx.designer.cs*",
+              "RelativeToolTip": "webforms\\About.aspx.designer.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T07:12:41.911Z"
+              "WhenOpened": "2026-06-13T07:12:41.911Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "About.aspx.cs [Design]",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\About.aspx.cs",
               "RelativeDocumentMoniker": "webforms\\About.aspx.cs",
@@ -371,19 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "About.aspx",
-              "DocumentMoniker": "D:\\Web Lab\\webforms\\About.aspx",
-              "RelativeDocumentMoniker": "webforms\\About.aspx",
-              "ToolTip": "D:\\Web Lab\\webforms\\About.aspx",
-              "RelativeToolTip": "webforms\\About.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-12T20:50:39.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "About.aspx.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\About.aspx.cs",
               "RelativeDocumentMoniker": "webforms\\About.aspx.cs",
@@ -395,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "WebForm1.aspx",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\WebForm1.aspx",
               "RelativeDocumentMoniker": "webforms\\WebForm1.aspx",
@@ -407,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Global.asax.cs",
               "RelativeDocumentMoniker": "webforms\\Global.asax.cs",
@@ -419,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "webforms\\App_Start\\RouteConfig.cs",
@@ -431,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "ControlExtensions.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Infrastructure\\ControlExtensions.cs",
               "RelativeDocumentMoniker": "webforms\\Infrastructure\\ControlExtensions.cs",
@@ -443,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "MemberStatistics.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Models\\MemberStatistics.cs",
               "RelativeDocumentMoniker": "webforms\\Models\\MemberStatistics.cs",
@@ -455,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "WebForm1.aspx.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\WebForm1.aspx.cs",
               "RelativeDocumentMoniker": "webforms\\WebForm1.aspx.cs",
@@ -467,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "WebForm1.aspx.designer.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\WebForm1.aspx.designer.cs",
               "RelativeDocumentMoniker": "webforms\\WebForm1.aspx.designer.cs",
@@ -479,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Submission.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Models\\Submission.cs",
               "RelativeDocumentMoniker": "webforms\\Models\\Submission.cs",
@@ -491,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Default.aspx.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Default.aspx.cs",
               "RelativeDocumentMoniker": "webforms\\Default.aspx.cs",
@@ -503,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "SubmissionRepository.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Models\\SubmissionRepository.cs",
               "RelativeDocumentMoniker": "webforms\\Models\\SubmissionRepository.cs",
@@ -515,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Web Lab\\backend\\Program.cs",
               "RelativeDocumentMoniker": "backend\\Program.cs",
@@ -527,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Submission.cs",
               "DocumentMoniker": "D:\\Web Lab\\backend\\Models\\Submission.cs",
               "RelativeDocumentMoniker": "backend\\Models\\Submission.cs",
@@ -539,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "WebLabDbContext.cs",
               "DocumentMoniker": "D:\\Web Lab\\backend\\Data\\WebLabDbContext.cs",
               "RelativeDocumentMoniker": "backend\\Data\\WebLabDbContext.cs",
@@ -551,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Contact.aspx.cs",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Contact.aspx.cs",
               "RelativeDocumentMoniker": "webforms\\Contact.aspx.cs",
@@ -563,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "readme.txt",
               "DocumentMoniker": "D:\\Web Lab\\packages\\Microsoft.AspNet.FriendlyUrls.1.0.2\\readme.txt",
               "RelativeDocumentMoniker": "packages\\Microsoft.AspNet.FriendlyUrls.1.0.2\\readme.txt",

@@ -1,0 +1,31 @@
+﻿<%@ Page Title="Events | KUET Career Club" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Events.aspx.cs" Inherits="WebLab.WebForms.EventsPage" %>
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">Events | KUET Career Club</asp:Content>
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <section class="page-header">
+        <h1>Upcoming Events</h1>
+        <p>Discover workshops, networking meetups, and career-focused sessions designed to prepare KUET students for real-world success.</p>
+    </section>
+
+    <section class="events-grid">
+        <article class="event-card">
+            <span class="event-badge">Workshop</span>
+            <h2>Resume & LinkedIn Bootcamp</h2>
+            <p class="event-meta">May 03, 2026 • 3:30 PM • Central Seminar Hall</p>
+            <p>Learn how to write impactful resumes and optimize your LinkedIn profile for internship and job applications.</p>
+        </article>
+
+        <article class="event-card">
+            <span class="event-badge">Networking</span>
+            <h2>Alumni Career Talk</h2>
+            <p class="event-meta">May 12, 2026 • 5:00 PM • Virtual Session</p>
+            <p>Connect with KUET alumni working in top industries and gain insights on career choices and growth paths.</p>
+        </article>
+
+        <article class="event-card">
+            <span class="event-badge">Mock Session</span>
+            <h2>Interview Practice Day</h2>
+            <p class="event-meta">May 20, 2026 • 2:00 PM • Career Lab</p>
+            <p>Practice technical and HR interviews with mentors and receive structured feedback to improve confidence.</p>
+        </article>
+    </section>
+</asp:Content>
