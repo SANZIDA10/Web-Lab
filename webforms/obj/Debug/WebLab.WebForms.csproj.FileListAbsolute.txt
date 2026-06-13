@@ -1,0 +1,9 @@
+D:\Web Lab\webforms\bin\WebLab.WebForms.dll
+D:\Web Lab\webforms\bin\WebLab.WebForms.pdb
+D:\Web Lab\webforms\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Web Lab\webforms\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Web Lab\webforms\obj\Debug\WebLab.WebForms.csproj.AssemblyReference.cache
+D:\Web Lab\webforms\obj\Debug\WebLab.WebForms.csproj.CoreCompileInputs.cache
+D:\Web Lab\webforms\obj\Debug\WebLab.W.273190E4.Up2Date
+D:\Web Lab\webforms\obj\Debug\WebLab.WebForms.dll
+D:\Web Lab\webforms\obj\Debug\WebLab.WebForms.pdb

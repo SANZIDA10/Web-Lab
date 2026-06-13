@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\backend",
+    "\\backend\\Models",
+    "\\webforms",
+    "\\webforms\\bin"
+  ],
+  "SelectedNode": "\\webforms\\About.aspx",
+  "PreviewInSolutionExplorer": false
+}

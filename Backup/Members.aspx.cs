@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Web.UI;
+
+namespace WebLab.WebForms
+{
+    public partial class MembersPage : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            var members = GetMembers();
+            MembersRepeater.DataSource = members;
+            MembersRepeater.DataBind();
+            EmptyStatePanel.Visible = (members.Count == 0);
+        }
+
+        private List<dynamic> GetMembers()
+        {
+            var list = new List<dynamic>();
+            string connStr = ConfigurationManager.ConnectionStrings["KCCDB"].ConnectionString;
+
+            using (var conn = new SqlConnection(connStr))
+            {
+                conn.Open();
+                using (var cmd = new SqlCommand(
+                    "SELECT Id, Name, Role, Department, Year, Bio FROM Members ORDER BY Name", conn))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new
+                        {
+                            Id         = reader.GetInt32(0),
+                            Name       = reader.GetString(1),
+                            Role       = reader.GetString(2),
+                            Department = reader.IsDBNull(3) ? "" : reader.GetString(3),
+                            Year       = reader.IsDBNull(4) ? "" : reader.GetString(4),
+                            Bio        = reader.IsDBNull(5) ? "" : reader.GetString(5)
+                        });
+                    }
+                }
+            }
+            return list;
+        }
+    }
+}

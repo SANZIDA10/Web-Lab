@@ -1,5 +1,8 @@
 <%@ Page Title="Home | KUET Career Club" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebLab.WebForms.HomePage" %>
 <asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">KUET Career Club</asp:Content>
+<asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
+    <link rel="stylesheet" href="~/Styles.css" runat="server" />
+</asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <section class="hero">
         <p class="hero-kicker">Welcome to KUET Career Club</p>

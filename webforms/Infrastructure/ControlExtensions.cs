@@ -5,7 +5,7 @@ namespace WebLab.WebForms.Infrastructure
 {
     public static class ControlExtensions
     {
-        public static T? FindDescendant<T>(this Control root, string id)
+        public static T FindDescendant<T>(this Control root, string id)
             where T : Control
         {
             foreach (Control child in root.Controls)
@@ -16,7 +16,7 @@ namespace WebLab.WebForms.Infrastructure
                 }
 
                 var nested = child.FindDescendant<T>(id);
-                if (nested is not null)
+                if (nested != null)
                 {
                     return nested;
                 }

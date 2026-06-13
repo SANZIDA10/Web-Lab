@@ -1,0 +1,129 @@
+﻿/* ============================================================
+   KCC Portfolio — Styles.css
+   Scope: Default.aspx homepage sections only
+   (navbar, footer, global resets live in Site.css)
+   ============================================================ */
+
+/* ── Hero ─────────────────────────────────────────────────── */
+.hero {
+    text-align: center;
+    padding: 90px 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-kicker {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.82rem;
+    color: var(--text-accent);
+    margin-bottom: 14px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    line-height: 1.25;
+    color: var(--text-primary);
+}
+
+.hero p {
+    font-size: 1.08rem;
+    color: var(--text-secondary);
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ── Hero actions ─────────────────────────────────────────── */
+.hero-actions {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.cta-btn,
+.ghost-btn {
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 11px 22px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.cta-btn {
+    background: var(--text-accent);
+    color: var(--brand-dark);
+    border: none;
+}
+
+    .cta-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+    }
+
+.ghost-btn {
+    border: 1px solid var(--text-accent);
+    color: var(--text-accent);
+    background: transparent;
+}
+
+    .ghost-btn:hover {
+        background: var(--text-accent);
+        color: var(--brand-dark);
+        transform: translateY(-2px);
+    }
+
+/* ── Features grid ────────────────────────────────────────── */
+.features {
+    width: min(1100px, 92%);
+    margin: 20px auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.feature-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 24px;
+    backdrop-filter: blur(6px);
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+    .feature-card:hover {
+        transform: translateY(-3px);
+        border-color: var(--text-accent);
+    }
+
+    .feature-card h2 {
+        font-size: 1.15rem;
+        margin-bottom: 10px;
+        color: var(--text-primary);
+    }
+
+    .feature-card p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        color: var(--text-secondary);
+    }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 800px) {
+    .hero {
+        padding: 60px 20px 30px;
+    }
+
+        .hero h1 {
+            font-size: 2rem;
+        }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}

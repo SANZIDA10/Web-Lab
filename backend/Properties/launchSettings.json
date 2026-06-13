@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "WebLab.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:1429;http://localhost:1430"
+    }
+  }
+}

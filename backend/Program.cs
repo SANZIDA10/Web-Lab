@@ -1,14 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.StaticFiles;
 using WebLab.Api.Data;
 using WebLab.Api.Models;
 
-// Get the Web Lab directory (parent of backend)
 var siteRoot = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), ".."));
-var databasePath = Path.Combine(siteRoot, "backend", "data", "weblab.db");
-
-Directory.CreateDirectory(Path.GetDirectoryName(databasePath)!);
 
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 {
@@ -16,23 +13,35 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
     WebRootPath = siteRoot
 });
 
+builder.Configuration
+    .SetBasePath(Path.Combine(siteRoot, "backend"))
+    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+    .AddEnvironmentVariables();
+
+var connectionString = builder.Configuration.GetConnectionString("WebLabDatabase")
+    ?? "Server=.\\SQLEXPRESS;Database=WebLabPortfolio;Trusted_Connection=True;TrustServerCertificate=True;Encrypt=False;";
+
 builder.Services.AddDbContext<WebLabDbContext>(options =>
-    options.UseSqlite($"Data Source={databasePath}"));
+    options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 var fileProvider = new PhysicalFileProvider(siteRoot);
+var contentTypeProvider = new FileExtensionContentTypeProvider();
+contentTypeProvider.Mappings[".aspx"] = "text/html";
 
 var defaultFiles = new DefaultFilesOptions
 {
     FileProvider = fileProvider
 };
 defaultFiles.DefaultFileNames.Clear();
-defaultFiles.DefaultFileNames.Add("home.html");
+defaultFiles.DefaultFileNames.Add("home.aspx");
 
 app.UseDefaultFiles(defaultFiles);
 app.UseStaticFiles(new StaticFileOptions
 {
-    FileProvider = fileProvider
+    FileProvider = fileProvider,
+    ContentTypeProvider = contentTypeProvider
 });
 
 using (var scope = app.Services.CreateScope())

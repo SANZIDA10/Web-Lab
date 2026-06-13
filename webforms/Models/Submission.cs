@@ -12,9 +12,9 @@ namespace WebLab.WebForms.Models
 
         public string Email { get; set; } = string.Empty;
 
-        public string? StudyProgram { get; set; }
+        public string StudyProgram { get; set; }
 
-        public string? Interests { get; set; }
+        public string Interests { get; set; }
 
         public string Message { get; set; } = string.Empty;
 
