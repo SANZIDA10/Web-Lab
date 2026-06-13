@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Web Lab\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\members.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\members.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|solutionrelative:webforms\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9E2D8E0-91B8-4C36-8A43-14A7B6E9F2D1}|webforms\\WebLab.WebForms.csproj|D:\\Web Lab\\webforms\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -160,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Join.aspx",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Join.aspx",
               "RelativeDocumentMoniker": "webforms\\Join.aspx",
@@ -210,19 +210,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "About.aspx",
-              "DocumentMoniker": "D:\\Web Lab\\webforms\\About.aspx",
-              "RelativeDocumentMoniker": "webforms\\About.aspx",
-              "ToolTip": "D:\\Web Lab\\webforms\\About.aspx*",
-              "RelativeToolTip": "webforms\\About.aspx*",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-12T20:50:39.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Events.aspx",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Events.aspx",
               "RelativeDocumentMoniker": "webforms\\Events.aspx",
@@ -231,6 +218,19 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2026-06-12T21:12:01.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "About.aspx",
+              "DocumentMoniker": "D:\\Web Lab\\webforms\\About.aspx",
+              "RelativeDocumentMoniker": "webforms\\About.aspx",
+              "ToolTip": "D:\\Web Lab\\webforms\\About.aspx",
+              "RelativeToolTip": "webforms\\About.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-12T20:50:39.653Z",
               "EditorCaption": ""
             },
             {
@@ -248,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Members.aspx",
               "DocumentMoniker": "D:\\Web Lab\\webforms\\Members.aspx",
               "RelativeDocumentMoniker": "webforms\\Members.aspx",
@@ -290,7 +290,7 @@
               "RelativeDocumentMoniker": "webforms\\Site.css",
               "ToolTip": "D:\\Web Lab\\webforms\\Site.css",
               "RelativeToolTip": "webforms\\Site.css",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAUwAsAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-06-13T07:17:45.86Z",
               "EditorCaption": ""
@@ -389,7 +389,8 @@
               "RelativeToolTip": "webforms\\About.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T07:12:41.911Z"
+              "WhenOpened": "2026-06-13T07:12:41.911Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

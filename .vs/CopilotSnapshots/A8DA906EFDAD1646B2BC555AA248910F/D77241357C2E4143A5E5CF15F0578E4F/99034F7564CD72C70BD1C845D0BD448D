@@ -1,11 +1,11 @@
-:root {
+﻿:root {
     --bg-primary: linear-gradient(135deg, #071b3a, #1b6cff);
     --bg-secondary: rgba(255, 255, 255, 0.06);
     --bg-tertiary: rgba(10, 24, 90, 0.55);
     --text-primary: white;
     --text-secondary: rgba(255, 255, 255, 0.92);
     --text-muted: rgba(255, 255, 255, 0.75);
-    --text-accent: #1a7a6e;
+    --text-accent: #a37eff;
     --border-light: rgba(255, 255, 255, 0.16);
     --border-lighter: rgba(255, 255, 255, 0.12);
     --brand-dark: #053063;
