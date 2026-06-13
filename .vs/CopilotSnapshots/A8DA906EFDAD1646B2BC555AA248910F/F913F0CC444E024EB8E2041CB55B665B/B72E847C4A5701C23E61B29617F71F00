@@ -1,4 +1,4 @@
-<%@ Page Title="Members | KCC Portfolio" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Members.aspx.cs" Inherits="WebLab.WebForms.Members" %>
+﻿<%@ Page Title="Members | KCC Portfolio" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Members.aspx.cs" Inherits="WebLab.WebForms.MembersPage" %>
 <asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">Members | KCC Portfolio</asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
 
