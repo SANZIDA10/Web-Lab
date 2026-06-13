@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --bg-primary: linear-gradient(135deg, #071b3a, #1b6cff);
     --bg-secondary: rgba(255, 255, 255, 0.06);
     --bg-tertiary: rgba(10, 24, 90, 0.55);
@@ -234,27 +234,14 @@ body {
     text-decoration: none;
 }
 
-.nav-brand img, .nav-brand img[runat] {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%; /* make logo round */
-    object-fit: cover;
-    border: 2px solid #1a7a6e;
-    margin-right: 12px;
-    vertical-align: middle;
-    background: transparent;
-    padding: 4px;
-}
-
 .nav-links-pill {
     display: flex;
     align-items: center;
     gap: 6px;
-    background: var(--nav-bg);
-    border: 0.5px solid var(--border-nav);
-    border-radius: 30px;
-    padding: 8px 12px;
-    margin: 0 auto; /* center pill */
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 999px;
+    padding: 6px 8px;
 }
 
 .nav-links-pill a {

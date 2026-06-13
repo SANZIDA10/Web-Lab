@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
@@ -14,7 +14,7 @@
     <form id="form1" runat="server">
     <nav class="nav">
             <a runat="server" href="~/Default.aspx" class="nav-brand">
-                <asp:Image ID="NavLogo" runat="server" ImageUrl="~/kcc-logo.png" AlternateText="KCC Logo" Style="height:44px;width:44px;border-radius:50%;object-fit:cover;border:2px solid #1a7a6e;margin-right:12px;vertical-align:middle;background:transparent;padding:4px;" />
+                <asp:Image ID="NavLogo" runat="server" ImageUrl="~/kcc-logo.png" AlternateText="KCC Logo" Style="height:44px;width:auto;border-radius:6px;object-fit:contain;border:2px solid #1a7a6e;margin-right:12px;vertical-align:middle;background:transparent;padding:4px;" />
                 <span style="vertical-align:middle;font-weight:700;letter-spacing:0.06em;color:inherit;text-decoration:none;">KUET CAREER CLUB</span>
             </a>
             <div class="nav-links-pill">
@@ -28,36 +28,20 @@
         </nav>
         <script type="text/javascript">
             (function(){
-                function initTheme() {
-                    var html = document.documentElement;
-                    var btn = document.getElementById('themeToggle');
-                    // initialize theme from localStorage or default to dark
-                    var theme = localStorage.getItem('kcc_theme') || 'dark';
-                    html.setAttribute('data-theme', theme);
-                    if(btn){ btn.textContent = (theme === 'dark') ? '🌙' : '☀️'; }
-                    // attach click handler to toggle and persist
-                    if(btn && !btn._kcc_listener) {
-                        btn.addEventListener('click', function(){
-                            var cur = html.getAttribute('data-theme');
-                            var next = (cur === 'dark') ? 'light' : 'dark';
-                            html.setAttribute('data-theme', next);
-                            localStorage.setItem('kcc_theme', next);
-                            btn.textContent = (next === 'dark') ? '🌙' : '☀️';
-                        });
-                        btn._kcc_listener = true;
-                    }
-                }
-
-                document.addEventListener('DOMContentLoaded', initTheme);
-
-                // sync across tabs/windows
-                window.addEventListener('storage', function(e){
-                    if (e.key === 'kcc_theme') {
-                        document.documentElement.setAttribute('data-theme', e.newValue || 'dark');
-                        var btn = document.getElementById('themeToggle');
-                        if(btn){ btn.textContent = (e.newValue === 'dark') ? '🌙' : '☀️'; }
-                    }
-                });
+                var html = document.documentElement;
+                var btn = document.getElementById('themeToggle');
+                // initialize theme from localStorage or default to dark
+                var theme = localStorage.getItem('kcc_theme') || 'dark';
+                html.setAttribute('data-theme', theme);
+                if(btn){ btn.textContent = (theme === 'dark') ? '🌙' : '☀️'; }
+                // attach click handler to toggle and persist
+                if(btn){ btn.addEventListener('click', function(){
+                    var cur = html.getAttribute('data-theme');
+                    var next = (cur === 'dark') ? 'light' : 'dark';
+                    html.setAttribute('data-theme', next);
+                    localStorage.setItem('kcc_theme', next);
+                    btn.textContent = (next === 'dark') ? '🌙' : '☀️';
+                }); }
             })();
         </script>
 

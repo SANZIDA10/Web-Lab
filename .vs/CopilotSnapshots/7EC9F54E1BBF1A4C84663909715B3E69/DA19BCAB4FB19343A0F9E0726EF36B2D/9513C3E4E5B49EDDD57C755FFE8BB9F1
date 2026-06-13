@@ -23,7 +23,16 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); transition: background 0.3s, color 0.3s; }
 
-    /* Use shared nav styles from Site.css - removed page-specific nav overrides so menu is consistent */
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 2.5rem; z-index: 10; position: relative; }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; letter-spacing: 0.08em; color: var(--text); text-decoration: none; }
+    .nav-brand img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #1a7a6e; }
+    /* center the pill between brand and toggle */
+    .nav-links-pill { display: flex; align-items: center; background: var(--nav-bg); border: 0.5px solid var(--border-nav); border-radius: 30px; padding: 8px 12px; gap: 8px; margin: 0 auto; }
+    .nav-links-pill a { color: var(--text-faint); text-decoration: none; font-size: 14px; padding: 10px 20px; border-radius: 20px; letter-spacing: 0.08em; transition: color 0.2s; }
+    .nav-links-pill a.active { color: #1a7a6e; font-weight: 700; border-bottom: 2px solid #1a7a6e; border-radius: 0; }
+    .nav-links-pill a:hover { color: var(--text); }
+    .theme-toggle { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border-nav); background: var(--nav-bg); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 20px; transition: all 0.2s; }
+    .theme-toggle:hover { border-color: #1a7a6e; transform: scale(1.05); }
 
     /* PAGE HEADER */
     .page-header {
@@ -120,8 +129,19 @@
   </div>
   <div class="copyright">© 2026 KUET CAREER CLUB. ALL RIGHTS RESERVED.</div>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
     (function () {
+      // Theme toggle (stores preference in localStorage)
+      var btn = document.getElementById('themeToggle');
+      var root = document.documentElement;
+      var stored = localStorage.getItem('site-theme');
+      if (stored) root.setAttribute('data-theme', stored);
+      btn && btn.addEventListener('click', function () {
+        var next = (root.getAttribute('data-theme') === 'dark') ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('site-theme', next);
+      });
+
       // Mark current nav link active (works with master page routing)
       try {
         var links = document.querySelectorAll('.nav-links-pill a');
